@@ -20,18 +20,18 @@ MongoClient.connect('mongodb://localhost:27017/TodoApp', { useNewUrlParser: true
   //   console.log(result);
   // });
 
-  db.collection('Users').findOneAndUpdate({
-    _id: 123
-  }, {
-    $set: { name: 'Charlie' },
-    $inc: { age: 1 }
-  }, {
-    returnOriginal: false
-  }).then((result) => {
-    console.log(result);
-  }, (err) => {
-    console.log(`Error: ${err}`);
-  });
+  // db.collection('Users').findOneAndUpdate({
+  //   _id: 123
+  // }, {
+  //   $set: { name: 'Charlie' },
+  //   $inc: { age: 1 }
+  // }, {
+  //   returnOriginal: false
+  // }).then((result) => {
+  //   console.log(result);
+  // }, (err) => {
+  //   console.log(`Error: ${err}`);
+  // });
 
   //client.close();
 });
