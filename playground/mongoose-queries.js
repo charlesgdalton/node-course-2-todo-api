@@ -32,7 +32,7 @@ const {User} = require('./../server/models/user.js');
 // });
 
 
-User.findById('5b4fe49cadc206dc1593040a').then((user) => {
+User.findById('5b520cece0d909377c5ec7d9').then((user) => {
   if(!user) {
     return console.log('User not found');
   }
